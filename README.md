@@ -4,7 +4,7 @@ A CLI tool to get distance (km) between multiple coordinates
   
 |Linux|Windows  |
 |--|--|
-|./coordinates | coordinates.exe |
+|[coordinates](./coordinates) | [coordinates.exe](coordinates.exe) |
 
 ## 1. Algorithm used
 [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula)
