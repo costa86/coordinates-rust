@@ -21,24 +21,25 @@ A CLI tool to get distance (km) between multiple coordinates
         -h, --help                                Print help information
         -V, --version                             Print version information
         
-        
+
 ## 3. Example
 
 
 | Place | Latitude| Longitude  |
 |--|--|--|
 | Paris | 48.96817 | 2.34246 |
-| Bruxels | 51.53828 | -0.16081 |
-| Frankfurt | 50.90925 | 4.39751 |
+| Bruxels | 50.49890 | 4.71467 |
+| Frankfurt | 50.29843 | 8.42832|
+
 
 ![map](./map.png)
 
 ```sh
-./coordinates -c 48.96817,2.34246,51.53828,-0.16081,50.90925,4.39751
+./coordinates -c 48.96817,2.34246,50.49890,4.71467,50.29843,8.42832
 ```
 
 ```sh
-661.62
+505.03
 ```
 > Coordinates' ranges :warning:
 >
