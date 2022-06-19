@@ -1,6 +1,6 @@
 # Coordinates
 
-A CLI tool to get distance (km) between 2 coordinates
+A CLI tool to get distance (km) between multiple coordinates
   
 |Linux|Windows  |
 |--|--|
@@ -11,31 +11,34 @@ A CLI tool to get distance (km) between 2 coordinates
 
 ## 2. Usage
 
-    Gets the distance (km) between two coordinates using Haversine formula
+    Gets the distance (Km) between multiple coordinates using Haversine formula
 
     USAGE:
-        coordinates --first <LATITUDE,LONGITUDE> --second <LATITUDE,LONGITUDE>
+        coordinates --coordinates <LATITUDE,LONGITUDE>
 
     OPTIONS:
-        -f, --first <LATITUDE,LONGITUDE>     Comma-separated latitude 1 and longitude 1
-        -h, --help                           Print help information
-        -s, --second <LATITUDE,LONGITUDE>    Comma-separated latitude 2 and longitude 2
-        -V, --version      
-
+        -c, --coordinates <LATITUDE,LONGITUDE>    Comma-separated latitudes and longitudes
+        -h, --help                                Print help information
+        -V, --version                             Print version information
+        
+        
 ## 3. Example
+
 
 | Place | Latitude| Longitude  |
 |--|--|--|
-| Paris | 48.85341 | -2.34880 |
-| London | 51.50853 | -0.12574 |
+| Paris | 48.96817 | 2.34246 |
+| Bruxels | 51.53828 | -0.16081 |
+| Frankfurt | 50.90925 | 4.39751 |
 
+![map](./map.png)
 
 ```sh
-./coordinates -f 48.85341,-2.34880 -s 51.50853,-0.12574
+./coordinates -c 48.96817,2.34246,51.53828,-0.16081,50.90925,4.39751
 ```
 
 ```sh
-335.0
+661.62
 ```
 > Coordinates' ranges :warning:
 >
